@@ -1,0 +1,61 @@
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 480px;
+  animation: fadeIn 0.8s ease;
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #273c75;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0 16px 0;
+  border: 1px solid #dcdde1;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #40739e;
+  outline: none;
+  box-shadow: 0 0 8px rgba(64, 115, 158, 0.5);
+}
+
+form button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #40739e, #3498db);
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #3498db, #40739e);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 480px) {
+  form {
+    padding: 20px;
+  }
+}
