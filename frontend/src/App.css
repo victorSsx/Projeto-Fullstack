@@ -1,61 +1,57 @@
-form {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-  width: 100%;
-  max-width: 480px;
-  animation: fadeIn 0.8s ease;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
 }
 
-form h2 {
+h2 {
   text-align: center;
-  margin-bottom: 20px;
-  color: #273c75;
+  color: #333;
 }
 
-form input,
-form select {
-  width: 100%;
-  padding: 12px 15px;
-  margin: 8px 0 16px 0;
-  border: 1px solid #dcdde1;
+.form-container, .dashboard-container {
+  max-width: 600px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 25px;
   border-radius: 10px;
-  font-size: 14px;
-  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-form input:focus,
-form select:focus {
-  border-color: #40739e;
-  outline: none;
-  box-shadow: 0 0 8px rgba(64, 115, 158, 0.5);
-}
-
-form button {
+input, select, button {
+  display: block;
   width: 100%;
-  padding: 14px;
-  background: linear-gradient(90deg, #40739e, #3498db);
-  color: #fff;
-  font-size: 16px;
-  border: none;
-  border-radius: 10px;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
-form button:hover {
-  transform: scale(1.05);
-  background: linear-gradient(90deg, #3498db, #40739e);
+button:hover {
+  background-color: #45a049;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-@media (max-width: 480px) {
-  form {
-    padding: 20px;
-  }
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
 }

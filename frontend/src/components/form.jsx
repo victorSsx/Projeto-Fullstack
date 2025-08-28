@@ -21,7 +21,8 @@ export default function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/enviar", form);
+      // URL do backend no Render
+      await axios.post("https://projeto-fullstack-5nsm.onrender.com/enviar", form);
       alert("Dados enviados com sucesso!");
       setForm({
         nome: "",
@@ -40,7 +41,7 @@ export default function Form() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form-container">
       <h2>Questionário Big Data</h2>
 
       <input placeholder="Nome" name="nome" value={form.nome} onChange={handleChange} required />
